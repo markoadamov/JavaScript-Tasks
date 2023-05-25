@@ -10,7 +10,7 @@
 
 <body>
     <script>
-        
+
         //Sub Task 1: Using the built-in map array function and an anonymous function, square all items in a number array
 
         let numbers = [2, 3, 4, 5];
@@ -18,6 +18,13 @@
         console.log(numbers.map(function (number) {
             return number * number;
         }))
+
+
+        //Sub Task 2: Write an IIFE function using an anonymous function which sums two numbers and logs the sum out to the console
+
+        console.log((function () {
+        return 2 + 2;
+        })());
 
     </script>
 </body>
