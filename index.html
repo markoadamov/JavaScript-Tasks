@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+        // Sub Task 1 and 2: Create a function which has a for loop in it. Declare a variable with var inside the for loop. Log the variable to the console after the loop. What happened? 
 
+        function test_variable_scope() {
+            for (let i = 0; i < 5; i++) {
+                var test_var = i;
+                let test_let = i;
+            }
+
+            console.log(test_var);
+            console.log(test_let);
+        }
+
+        test_variable_scope();  // number 4 and is logged in the console for "test_var" and "test_let is not defined" error is logged for "text_let" because "var" variables have function scope and "let" variables have block scope {}
     </script>
 </body>
+
 </html>
