@@ -70,6 +70,28 @@
 
         console.log(countUpDown(5));
 
+
+        // Sub Task 4: Write a function zooInventory that takes a zoo's inventory of animals (represented using nested arrays) and returns an array of strings that describe each animal's name, species, and age.
+
+        function zooInventory(myZoo){
+            let description = [];
+
+            
+            myZoo.forEach(animal => {
+                description.push(`${animal[0]} the ${animal[1][0]} is ${animal[1][1]}`)
+            })
+            
+            return description
+        }
+
+        let myZoo = [
+            ["King Kong", ["gorilla", 42]],
+            ["Nemo", ["fish", 5]],
+            ["Punxsutawney Phil", ["groundhog", 11]]
+        ];
+
+        console.log("Description array:", zooInventory(myZoo));
+
     </script>
 </body>
 </html>
