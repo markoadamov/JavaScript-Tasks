@@ -27,6 +27,8 @@
         // number 4 and is logged in the console for "test_var" and "test_let is not defined" error is logged for "text_let" because "var" variables have function scope and "let" variables have block scope {}
 
 
+
+
         // Sub Task 3: Create a variable outside of the function.  Log the variable to the console inside the function. What happened?
 
         var testVar3 = 1;
@@ -36,10 +38,28 @@
             console.log("Var inside function:", testVar3);
             console.log("Let inside function:", testLet3);
         }
-
-        testVariableScope3();
+        
+        //testVariableScope3();
 
         // 1 and 2 were logged in the console because both variables are global in this case so they're avalaible to the function
+
+
+        
+
+
+        // Sub Task 4: Create a variable inside the function.  Log the variable to the console outside the function. What happened?
+
+        function testVariableScope3() {
+            var testVar4 = 4;
+            let testLet4 = 4;
+        }
+        
+        console.log("Var outinside function:", testVar4);
+        console.log("Let outinside function:", testLet4);
+
+        testVariableScope4();
+
+        // Errors occured because both variables are local in the function so they're not available outside the function
 
     </script>
 </body>
