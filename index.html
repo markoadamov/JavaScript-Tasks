@@ -41,6 +41,19 @@
 
         console.log(rotateToRight(array, 3));
 
+
+        // Sub Task 2: Write a function that uses the native Array .reduce method to sum up an array of numbers, but starting at 50.
+
+        const array2 = [1, 2, 3];
+
+        const initialValue = 50;
+        const sumWithInitialValue = array2.reduce(
+            (accumulator, currentValue) => accumulator + currentValue,
+            initialValue
+        );
+
+        console.log(sumWithInitialValue);
+
     </script>
 </body>
 </html>
