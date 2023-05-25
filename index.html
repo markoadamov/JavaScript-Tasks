@@ -12,17 +12,35 @@
     <script>
         // Sub Task 1 and 2: Create a function which has a for loop in it. Declare a variable with var inside the for loop. Log the variable to the console after the loop. What happened? 
 
-        function test_variable_scope() {
+        function testVariableScope12() {
             for (let i = 0; i < 5; i++) {
-                var test_var = i;
-                let test_let = i;
+                var testVar12 = i;
+                let testLet12 = i;
             }
 
-            console.log(test_var);
-            console.log(test_let);
+            console.log(testVar12);
+            console.log(testLet12);
         }
 
-        test_variable_scope();  // number 4 and is logged in the console for "test_var" and "test_let is not defined" error is logged for "text_let" because "var" variables have function scope and "let" variables have block scope {}
+        //testVariableScope12(); 
+        
+        // number 4 and is logged in the console for "test_var" and "test_let is not defined" error is logged for "text_let" because "var" variables have function scope and "let" variables have block scope {}
+
+
+        // Sub Task 3: Create a variable outside of the function.  Log the variable to the console inside the function. What happened?
+
+        var testVar3 = 1;
+        let testLet3 = 2;
+
+        function testVariableScope3() {
+            console.log("Var inside function:", testVar3);
+            console.log("Let inside function:", testLet3);
+        }
+
+        testVariableScope3();
+
+        // 1 and 2 were logged in the console because both variables are global in this case so they're avalaible to the function
+
     </script>
 </body>
 
