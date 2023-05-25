@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        // First 3 bullet points sub tasks:
+        // First 3 bullet point sub tasks:
         // Create an array of colours
         // Loop through the array using the for loop and log the colour to the console
         // Loop through the array using the forEach loop and log the colour to the console
@@ -25,6 +25,21 @@
         colors.forEach(color => {
             console.log(color);
         });
+
+
+        // Sub Task 1: Write a function that will rotate an array to the right by a certain number of "steps".
+
+        function rotateToRight(array, steps){
+            for(let i = 0; i<steps; i++){
+                array.unshift(array.pop())     
+            }
+
+            return array
+        }
+
+        let array = [1,2,3,4,5,6,7,8,9,10];
+
+        console.log(rotateToRight(array, 3));
 
     </script>
 </body>
