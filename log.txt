@@ -1,0 +1,9 @@
+[5/26/2023 4:16:33 PM] Created doctor "Milan Milanovic".
+[5/26/2023 4:16:33 PM] Created patient "Dragan Petrovic".
+[5/26/2023 4:16:33 PM] Patient "Dragan Petrovic" chose doctor "Milan Milanovic".
+[5/26/2023 4:16:33 PM] Doctor "Milan Milanovic" scheduled a Blood Sugar Level lab test for patient "Dragan Petrovic" on 1.1.2024 at 18h.
+[5/26/2023 4:16:33 PM] Doctor "Milan Milanovic" scheduled a Blood Pressure lab test for patient "Dragan Petrovic" on 2.2.2024 at 19h.
+[5/26/2023 4:16:33 PM] Performed Blood Sugar Level lab test with result, level : 9, time of last meal: 12.
+[5/26/2023 4:16:33 PM] Performed Blood Pressure lab test with result, upper value : 7, lower value: 16, puls: 47.
+[5/26/2023 4:16:33 PM] Patient "Dragan Petrovic" received lab test result for Blood Sugar Level: level : 9, time of last meal: 12.
+[5/26/2023 4:16:33 PM] Patient "Dragan Petrovic" received lab test result for Blood Pressure: upper value : 7, lower value: 16, puls: 47.
