@@ -1,14 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+        class Character {
+            static count = 0;
 
+            constructor() {
+                if (new.target === Character) {
+                    throw new Error("Character class cannot be instantiated.");
+                }
+
+                Character.count++;
+                this.x = Math.floor(Math.random() * 10);
+                this.y = Math.floor(Math.random() * 10);
+            }
+
+            static getCount() {
+                return Character.count;
+            }
+
+            get x_cordinate() {
+                return this.x;
+            }
+
+            get y_cordinate() {
+                return this.y;
+            }
+
+            set position({ x, y }) {
+                if (x < 0 || x >= 10 || y < 0 || y >= 10) {
+                    throw new Error("Invalid position. X,Y need to be between 0-10");
+                }
+
+                this.x = x;
+                this.y = y;
+            }
+        }
+
+        class PlayerCharacter extends Character { }
+
+        class NonPlayerCharacter extends Character { }
+
+        const player = new PlayerCharacter();
+        const npc = new NonPlayerCharacter();
+
+        console.log("Player position:", player.x_cordinate, player.y_cordinate);
+        console.log("NPC position:", npc.x_cordinate, npc.y_cordinate);
+
+        try {
+
+            player.position = { x: 5, y: 7 };
+            npc.position = { x: 3, y: 2 };
+
+            console.log("Updated player position:", player.x_cordinate, player.y_cordinate);
+            console.log("Updated NPC position:", npc.x_cordinate, npc.y_cordinate);
+
+            player.position = { x: 11, y: 5 }; // Trying to set invalid position
+        } catch (error) {
+            console.log("Error:", error.message);
+        }
+
+        console.log("Total characters created:", Character.getCount());
+
+
+        //const characterClass = new Character(); // Trying to instantiate Character class
+
+
+//------------------------------------------------------------------
+
+        console.log("\n\nSame done with Prototypes:");
+
+
+        function Character2() {
+            if (this.constructor === Character2) {
+                throw new Error("Character class cannot be instantiated.");
+            }
+
+            Character2.count++;
+            this.x = Math.floor(Math.random() * 10);
+            this.y = Math.floor(Math.random() * 10);
+        }
+
+        Character2.count = 0;
+
+        Character2.prototype.getX = function () {
+            return this.x;
+        };
+
+        Character2.prototype.getY = function () {
+            return this.y;
+        };
+
+        Character2.prototype.setPosition = function ({ x, y }) {
+            if (x < 0 || x >= 10 || y < 0 || y >= 10) {
+                throw new Error("Invalid position. X,Y need to be between 0-10");
+            }
+
+            this.x = x;
+            this.y = y;
+        };
+
+        Character2.getCount = function () {
+            return Character2.count;
+        };
+
+        function PlayerCharacter2() {
+            Character2.call(this);
+        }
+        Object.setPrototypeOf(PlayerCharacter2.prototype, Character2.prototype);
+
+        
+        function NonPlayerCharacter2() {
+            Character2.call(this);
+        }
+        Object.setPrototypeOf(NonPlayerCharacter2.prototype, Character2.prototype);
+
+        const player2 = new PlayerCharacter2();
+        const npc2 = new NonPlayerCharacter2();
+
+        console.log("Player position:", player2.getX(), player2.getY());
+        console.log("NPC position:", npc2.getX(), npc2.getY());
+
+        player2.setPosition({ x: 5, y: 7 });
+        npc2.setPosition({ x: 3, y: 2 });
+
+        console.log("Updated player position:", player2.getX(), player2.getY());
+        console.log("Updated NPC position:", npc2.getX(), npc2.getY());
+
+        try {
+            player2.setPosition({ x: 11, y: 5 }); // Trying to set invalid position
+        } catch (error) {
+            console.log("Error:", error.message);
+        }
+
+        console.log("Total characters created:", Character2.getCount());
+
+
+        const characterClass2 = new Character2(); // Trying to instantiate Character2 class
     </script>
 </body>
+
 </html>
