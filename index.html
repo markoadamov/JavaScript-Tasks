@@ -8,7 +8,49 @@
 </head>
 <body>
     <script>
+    const simulateAsyncTask = (isSuccess) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (isSuccess) {
+                    resolve("Success!");
+                } else {
+                    reject("Error!");
+                }
+            }, 1000);
+        });
+    };
 
+    simulateAsyncTask(true)  // Simulating success
+        .then((result) => {
+            console.log(result);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+
+    simulateAsyncTask(false)  // Simulating fail
+        .then((result) => {
+            console.log(result);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+
+
+    // Example with async await
+    
+    const doAsyncTask = async () => {
+        try {
+            const result1 = await simulateAsyncTask(true); // success case
+            console.log("doAsyncTask success case:", result1); 
+            
+            const result2 = await simulateAsyncTask(false); // fail case
+        } catch (error) {
+            console.log("doAsyncTask error case:", error);
+        }
+    };
+
+    doAsyncTask();
     </script>
 </body>
 </html>
