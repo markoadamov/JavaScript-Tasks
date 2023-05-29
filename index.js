@@ -10,15 +10,26 @@ function getCurrentDateTime() {
 
 // Logger function to log actions to a file
 logAction = (action) => {
-  const logLine = getCurrentDateTime() + " " + action;
-  fs.appendFileSync("log.txt", logLine + "\n");
+  try{
+    const logLine = getCurrentDateTime() + " " + action;
+    fs.appendFileSync("log.txt", logLine + "\n");
+    console.log("Successful file writing of log line: ", logLine);
+  }
+  catch(error){
+    console.error("An error occurred:", error);
+  }
 };
 
-
-class Doctor {
-  constructor(firstName, lastName, specialty) {
+class Person {
+  constructor(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
+  }
+}
+
+class Doctor extends Person {
+  constructor(firstName, lastName, specialty) {
+    super(firstName, lastName);
     this.specialty = specialty;
     logAction(`Created doctor "${this.firstName} ${this.lastName}".`);
   }
@@ -30,10 +41,9 @@ class Doctor {
 }
 
 
-class Patient {
+class Patient extends Person{
   constructor(firstName, lastName, idNumber, healthCardNumber) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+    super(firstName, lastName);
     this.idNumber = idNumber;
     this.healthCardNumber = healthCardNumber;
     this.selectedDoctor = null;
