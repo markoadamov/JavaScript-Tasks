@@ -1,0 +1,36 @@
+[5/29/2023 9:13:33 AM] Created doctor "Milan Milanovic".
+[5/29/2023 9:13:33 AM] Created patient "Dragan Petrovic".
+[5/29/2023 9:13:33 AM] Patient "Dragan Petrovic" chose doctor "Milan Milanovic".
+[5/29/2023 9:13:33 AM] Doctor "Milan Milanovic" scheduled a Blood Sugar Level lab test for patient "Dragan Petrovic" on 1.1.2024 at 18h.
+[5/29/2023 9:13:33 AM] Doctor "Milan Milanovic" scheduled a Blood Pressure lab test for patient "Dragan Petrovic" on 2.2.2024 at 19h.
+[5/29/2023 9:13:33 AM] Performed Blood Sugar Level lab test with result, level : 57, time of last meal: 4.
+[5/29/2023 9:13:33 AM] Performed Blood Pressure lab test with result, upper value : 96, lower value: 61, puls: 78.
+[5/29/2023 9:13:33 AM] Patient "Dragan Petrovic" received lab test result for Blood Sugar Level: level : 57, time of last meal: 4.
+[5/29/2023 9:13:33 AM] Patient "Dragan Petrovic" received lab test result for Blood Pressure: upper value : 96, lower value: 61, puls: 78.
+[5/29/2023 9:19:06 AM] Created doctor "Milan Milanovic".
+[5/29/2023 9:19:06 AM] Created patient "Dragan Petrovic".
+[5/29/2023 9:19:06 AM] Patient "Dragan Petrovic" chose doctor "Milan Milanovic".
+[5/29/2023 9:19:06 AM] Doctor "Milan Milanovic" scheduled a Blood Sugar Level lab test for patient "Dragan Petrovic" on 1.1.2024 at 18h.
+[5/29/2023 9:19:06 AM] Doctor "Milan Milanovic" scheduled a Blood Pressure lab test for patient "Dragan Petrovic" on 2.2.2024 at 19h.
+[5/29/2023 9:19:06 AM] Performed Blood Sugar Level lab test with result, level : 27, time of last meal: 15.
+[5/29/2023 9:19:06 AM] Performed Blood Pressure lab test with result, upper value : 60, lower value: 1, puls: 57.
+[5/29/2023 9:19:06 AM] Patient "Dragan Petrovic" received lab test result for Blood Sugar Level: level : 27, time of last meal: 15.
+[5/29/2023 9:19:06 AM] Patient "Dragan Petrovic" received lab test result for Blood Pressure: upper value : 60, lower value: 1, puls: 57.
+[5/29/2023 9:19:45 AM] Created doctor "Milan Milanovic".
+[5/29/2023 9:19:45 AM] Created patient "Dragan Petrovic".
+[5/29/2023 9:19:45 AM] Patient "Dragan Petrovic" chose doctor "Milan Milanovic".
+[5/29/2023 9:19:45 AM] Doctor "Milan Milanovic" scheduled a Blood Sugar Level lab test for patient "Dragan Petrovic" on 1.1.2024 at 18h.
+[5/29/2023 9:19:45 AM] Doctor "Milan Milanovic" scheduled a Blood Pressure lab test for patient "Dragan Petrovic" on 2.2.2024 at 19h.
+[5/29/2023 9:19:45 AM] Performed Blood Sugar Level lab test with result, level : 28, time of last meal: 19.
+[5/29/2023 9:19:45 AM] Performed Blood Pressure lab test with result, upper value : 3, lower value: 92, puls: 72.
+[5/29/2023 9:19:45 AM] Patient "Dragan Petrovic" received lab test result for Blood Sugar Level: level : 28, time of last meal: 19.
+[5/29/2023 9:19:45 AM] Patient "Dragan Petrovic" received lab test result for Blood Pressure: upper value : 3, lower value: 92, puls: 72.
+[5/29/2023 9:20:01 AM] Created doctor "Milan Milanovic".
+[5/29/2023 9:20:01 AM] Created patient "Dragan Petrovic".
+[5/29/2023 9:20:01 AM] Patient "Dragan Petrovic" chose doctor "Milan Milanovic".
+[5/29/2023 9:20:01 AM] Doctor "Milan Milanovic" scheduled a Blood Sugar Level lab test for patient "Dragan Petrovic" on 1.1.2024 at 18h.
+[5/29/2023 9:20:01 AM] Doctor "Milan Milanovic" scheduled a Blood Pressure lab test for patient "Dragan Petrovic" on 2.2.2024 at 19h.
+[5/29/2023 9:20:01 AM] Performed Blood Sugar Level lab test with result, level : 59, time of last meal: 4.
+[5/29/2023 9:20:01 AM] Performed Blood Pressure lab test with result, upper value : 34, lower value: 54, puls: 23.
+[5/29/2023 9:20:01 AM] Patient "Dragan Petrovic" received lab test result for Blood Sugar Level: level : 59, time of last meal: 4.
+[5/29/2023 9:20:01 AM] Patient "Dragan Petrovic" received lab test result for Blood Pressure: upper value : 34, lower value: 54, puls: 23.
